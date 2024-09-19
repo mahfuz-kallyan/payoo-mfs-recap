@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -17,19 +17,45 @@
             <div class="camera"></div>
             <div class="display">
                 <div class="artboard artboard-demo phone-3">
-                    <!-- stat start -->
+                    <!--acount balance stat start -->
                     <div class="stats shadow">
                         <div class="stat">
-                            <div class="stat-title">Total Page Views</div>
-                            <div class="stat-value">89,400</div>
-                            <div class="stat-desc">21% more than last month</div>
+                            <div class="stat-title">Account Balance</div>
+                            <div id="balance" class="stat-value">10000</div>
                         </div>
                     </div>
-                    <!-- stat end -->
+                    <!--acount balance stat end -->
+
+                <!-- divider start -->
+                <div class="divider"></div>
+                 <!-- divider end -->
+
+                 <!-- account form start -->
+                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Add Money</span>
+                        </label>
+                        <input id="add-money" type="text" placeholder="Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Add Pin</span>
+                        </label>
+                        <input id="add-pin" type="password" placeholder="Pin" class="input input-bordered" autocomplete="off" required />
+                      </div>
+                      <div id="btn" class="form-control mt-6">
+                        <button class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- account form end -->
                 </div>
             </div>
         </div>
     </main>
+    <script src="./js/addMoney.js"></script>
 </body>
 
 </html>
